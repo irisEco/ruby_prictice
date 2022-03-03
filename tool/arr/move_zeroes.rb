@@ -34,6 +34,7 @@ def move_zeroes(nums)
       nums.delete_at(j)
       nums.push 0
     else
+
       j += 1
     end
   end
