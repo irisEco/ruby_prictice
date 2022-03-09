@@ -56,7 +56,8 @@ end
 
 # ruby其他思路
 # def combination_sum(candidates, target)
-#   # 声明 trget +  1 个数组
+#   # 声明 trget +  1 个数
+
 #   dp = Array.new(target + 1) { [] }
 #   # 将数组从大到小排序
 #   candidates.sort!.reverse!
