@@ -24,9 +24,9 @@
 # 1. 先将所有0排在数组前,并将原位置数组元素删除,记录0的个数
 # 2. 将数组从最后一个0 的位置开始插入数组元素为1的数组元素,并删除原来数组
 # 3. 数组头部插入一个元素时, 原来为i的索引指向的是它对应的上一个元素,所以删除时需要+1
+# 单指针
 def sort_colors(nums)
   n = nums.length - 1
-  nums = Array.new(nums)
   p = 0
   for i in 0..n
     if nums[i] == 0
@@ -44,7 +44,7 @@ def sort_colors(nums)
   nums
 end
 
-nums = [2,2,0,0,1]
+nums = [2,0,2,1,1,0]
 result = sort_colors(nums)
 
 puts result.to_s
